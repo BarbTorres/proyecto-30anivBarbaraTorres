@@ -11,17 +11,6 @@ nav a{
     text-decoration: none;
 }
 
-.gridIndex {
-    display: grid;
-    height: 100vh;
-    grid-template-areas:
-    "header header"
-    "imagen quienes"
-    "footer footer";
-    grid-template-rows: 80px 2fr 1fr;
-    row-gap: 10px;
-    column-gap: 10px;
-}
 
 .gridPlatillos{
     display: grid;
@@ -33,36 +22,6 @@ nav a{
     "footer footer";
 }
 
-.gridMemorabilia{
-    display: grid;
-    height: 100vh;
-    /*background-color: coral;*/
-    grid-template-areas:
-    "header"
-    "sucursales"
-    "footer";
-    grid-template-rows:auto;
-    height: 100vh;
-}
-
-.gridVideos{
-    display: grid;
-    height: 100vh;
-    grid-template-areas:
-    "header header"
-    "video mensajes"
-    "footer footer";
-    grid-template-rows: 80px 2fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 10px;
-    column-gap: 10px;
-}
-
-.video{
-    margin-left: 10px;
-    grid-area: video;
-}
-
 
 .mensajesVideos{
     margin-top: 30px;
@@ -71,44 +30,6 @@ nav a{
     grid-area: mensajes;
     justify-content: center;
     align-self: center;
-}
-
-.gridConcursos{
-    display: grid;
-    height: 100vh;
-    grid-template-areas:
-    "header"
-    "main"
-    "footer";
-    grid-template-rows: 80px 2fr 1fr;
-    grid-template-columns: none;
-    row-gap: 10px;
-    column-gap: 10px;
-}
-
-.bases, table{
-   text-align:left;
-   width: 100%;
-   padding-left: 65px;
-
-}
-
-
-
-/*.tablaPremios{
-    width:auto;
-    text-align: center;
-    justify-content: center;
-}*/
-
-.border{
-    /*border: 1px solid black;*/
-    justify-self: center;
-    
-}
-
-.colorGray{
-    color:#828382;
 }
 
 header{
@@ -129,12 +50,6 @@ header{
     margin: 10px;
     margin-left: 20px;
 
-}
-
-.formVideos{
-    font-style: bold;
-    font-family: 'Roboto', sans-serif;
-    color: #2c675f; 
 }
 
 .menu{
@@ -161,7 +76,6 @@ h1{
     font-weight: bold;
     font-size: 30px;
     font-family: 'Poppins', sans-serif;
-    width: 85%;
 }
 
 .historiaSuc{
@@ -169,15 +83,14 @@ h1{
     text-align: center;
     margin-bottom: 20px;
     margin-top: 20px;
-    color: #555655;
+    color: #676867;
     font-weight: bold;
     font-size: 30px;
     font-family: 'Poppins', sans-serif;
-    width: 85%;
 }
 
 h3{
-    color: #555655;
+    color: #3b8a8a;
     font-weight: bold;
     font-size: 30px;
     font-family: 'Poppins', sans-serif;
@@ -222,20 +135,6 @@ h4{
     font-weight: bold;
     font-size: 30px;
     font-family: 'Poppins', sans-serif;
-}
-
-/*.contenedor1{
-    display: flex;
-   
-}*/
-
-.treintaAniosImage{
-/*    margin-top: 30px;
-    margin-left: 30px;
-    margin-right: 30px;
-    height:fit-content;*/
-    width: 30rem;
-    grid-area: imagen;
 }
 
 .primerParrafo{
@@ -341,7 +240,6 @@ h5{
     padding-top: 10px;
     padding-bottom: 30px;
     align-items: center;
-    background-color: aquamarine;
 }
 
 
@@ -362,55 +260,6 @@ h5{
 }
 
 @media screen and (max-width:768px){
-    .gridIndex{
-        display:grid;
-        grid-template-areas:
-        "header"
-        "imagen"
-        "quienes"
-        "footer";
-        grid-template-rows:auto;
-        grid-template-columns: none;
-        margin:auto;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .gridVideos{
-        display: grid;
-        grid-template-areas:
-        "header"
-        "video"
-        "mensajes"
-        "footer";
-        grid-template-columns: none;
-        grid-template-rows: auto;
-        align-items: center;
-    }
-
-    .gridConcursos{
-        display: grid;
-        grid-template-areas:
-        "header"
-        "video"
-        "mensajes"
-        "footer";
-        grid-template-columns: none;
-        grid-template-rows: auto;
-        align-items: center;
-    }
-
-    .bases, table{
-        overflow: visible;
-        width: 400px;
-        margin: 1px;
-    }
-
-    iframe{
-        margin-left: 20px;
-        margin-top: 30px;
-        width: 90%;
-    }
 
     .menu{
         font-size: 13px;
@@ -430,9 +279,6 @@ h5{
         justify-items: center;
         }
 
-     h1{
-         width: fit-content;
-    }
 
      .primerParrafo{
         width: 85%;
@@ -460,13 +306,5 @@ h5{
         width: 90%;
     }
 
-    .historiaSuc{
-        margin: 40px;
-        margin-bottom: 1px;
-    }
-
-    .bases, .tablaPremios{
-        margin-left: 35px;
-    }
 
 }
