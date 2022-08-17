@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@300&display=swap');
+
+$color-texto: #555655;
+$color-texto2: #707170;
+$tipografia-general: 'Roboto', sans-serif;
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+
+.gridPlatillos{
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid-template-areas:
+    "header header"
+    "section section"
+    "footer footer";
+}
+
+
+.mensajesVideos{
+    margin-top: 30px;
+    width: 95%;
+    text-align: center;
+    grid-area: mensajes;
+    justify-content: center;
+    align-self: center;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    position: sticky;
+    top:0;   
+    box-shadow: 0px 0px 6px 0px rgba(255, 255, 255, 0.5);
+    background-color: rgba(64, 134, 131, 0.582);
+    z-index:10;
+    grid-area: header;
+}
+
+.header_image{
+    width: 150px;
+    height: 55px;
+    margin: 10px;
+    margin-left: 20px;
+
+}
+
+.menu{
+    display: inline-block;
+    font-style: bold;
+    font-family: $tipografia-general;
+    color: #2c675f; 
+    margin-top: 30px;
+    margin-left: 35px;
+    margin-right: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    grid-area: menu;
+        &:hover{
+            color:aliceblue;
+        }
+}
+
+
+h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: $color-texto;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.historiaSuc{
+    margin-left: 90px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: #676867;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+h3{
+    color: #3b8a8a;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    width: 85%;
+}
+
+h6{
+    color: #569e94;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 15px;
+}
+
+.animate__animated.animate__slideInDown .animate__flipInX{
+    --animate-duration: 3s;
+}
+
+.platillos{
+    margin: 30px;
+    color: $color-texto;
+    font-weight: normal;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    .platillosImagen{
+        width: 30%;
+        margin: 25px;
+        margin-left: 50px;
+    }
+        .platillosInside{
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+        }
+    }
+
+
+h4{
+    margin-left: 30px;
+    color: $color-texto;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.primerParrafo{
+    margin-left: 30px;
+    font-style: normal;
+    font-family: $tipografia-general;
+    text-align: justify;
+    color: $color-texto2;
+    grid-area: quienes;   
+}
+
+.contenedor{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.suc{
+    width: 300px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-area: sucursales;
+
+}
+
+li{
+    width: 100vh;
+    font-style: normal;
+    font-family: $tipografia-general;
+    color: $color-texto2;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+p{
+    font-style: bolder;
+    font-family: $tipografia-general;
+    color: $color-texto2;
+    line-height: 25px;
+    text-transform: none;
+    font-size: 16px;
+
+}
+
+td{
+    font-style: normal;
+    font-family: $tipografia-general;
+    text-align: justify;
+    color: $color-texto2;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+
+
+body{
+    background-image: url(../images/fondo-papel.jpg);
+    background-size:100%;
+
+}
+
+ul{
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 30px;
+
+}
+
+th{
+    font-style: bolder;
+    font-family: $tipografia-general;
+    color: $color-texto2;
+    font-size: 20px;
+}
+
+footer{
+    font-style: normal;
+    font-family: $tipografia-general;
+    color:darkgray; 
+    background-color: 136060;
+    grid-area: footer;
+    align-self: center;
+    justify-self: center;
+    padding: 20px;
+}
+
+h5{
+    font-size: 10px;
+}
+
+.sucursales{
+    width: 250px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    align-items: center;
+}
+
+
+.box__fixed{   
+    font-style: normal;
+    font-family: $tipografia-general;
+    color: aliceblue;
+    width: 300 px;
+    height: 70px;
+    background-color: rgba(79, 80, 78, 0.692);
+    position: fixed;
+    bottom: 10px;
+    right:10px;
+    border-radius: 7px;
+    margin: 5px;
+    padding: 5px;
+    
+}
+
+@media screen and (max-width:768px){
+
+    .menu{
+        font-size: 13px;
+        width: 80%;
+        margin: 6px;
+        align-items: center;
+    }
+
+    .header_image{
+        width: fit-content;
+        align-items: center;
+    }
+
+    header{
+        display: grid;
+        grid-template-rows: 1fr 2fr;
+        justify-items: center;
+        }
+
+
+     .primerParrafo{
+        width: 85%;
+        text-align: justify;
+        justify-content:center;
+        margin: 40px;
+        font-size: .9rem;
+    }
+
+    h4{
+        width: 90%;
+        text-align: center;
+        justify-content:center;
+        margin: 30px;
+        font-size: 2rem;
+    }
+
+    .platillosInside{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .platillosImagen{
+        margin-left: 25px;
+        width: 90%;
+    }
+
+
+}
